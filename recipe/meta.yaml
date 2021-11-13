@@ -11,7 +11,7 @@ source:
   sha256: 6c6857c659780c3ce16eeef68c941ae4cdfa00c4df0732caf4dd3bd8da672de7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [py<35]
   entry_points:
