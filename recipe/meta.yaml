@@ -26,10 +26,10 @@ requirements:
     - pip
     - python
   run:
-    - matplotlib-base >=2.0
-    - numpy >=1.15.0
+    - matplotlib-base >=3.3.4
+    - numpy >=1.19.5
     - python
-    - scipy >=0.17.1
+    - scipy >=1.5.4
     - {{ pin_compatible('numpy') }}
 
 test:
