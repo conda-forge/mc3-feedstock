@@ -1,5 +1,5 @@
 {% set name = "mc3" %}
-{% set version = "3.1.5" %}
+{% set version = "3.2.0" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
-  sha256: 70cd17e8c11d2d7dd027ac73aaa3fbc13f001fff41a678d3c8ccfe408b824834
+  sha256: 4922226bce629637751ae57ce47e9de1016ecf77beab969152f1f5c464f9928c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
-  skip: true  # [py<35]
+  skip: true  # [py<39]
   entry_points:
     - mc3 = mc3.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,7 +28,7 @@ requirements:
     - python
   run:
     - matplotlib-base >=3.3.4
-    - numpy >=1.19.5
+    - numpy >=1.23.5
     - python
     - scipy >=1.5.4
 
