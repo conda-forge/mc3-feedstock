@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   skip: true  # [win]
-  skip: true  # [py<35]
+  skip: true  # [py<39]
   entry_points:
     - mc3 = mc3.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,7 +28,7 @@ requirements:
     - python
   run:
     - matplotlib-base >=3.3.4
-    - numpy >=1.19.5
+    - numpy >=1.23.5
     - python
     - scipy >=1.5.4
 
