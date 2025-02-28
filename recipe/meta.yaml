@@ -1,5 +1,5 @@
 {% set name = "mc3" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
-  sha256: 4922226bce629637751ae57ce47e9de1016ecf77beab969152f1f5c464f9928c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
+  sha256: eb894f478f1df78dce2b285445435c884b7aab65c052e0c24d7e52bdc3f0ca94
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [py<39]
   entry_points:
