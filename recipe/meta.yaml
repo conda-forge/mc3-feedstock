@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pip
     - python
+    - setuptools
   run:
     - matplotlib-base >=3.3.4
     - numpy >=1.23.5
