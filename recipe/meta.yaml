@@ -11,7 +11,7 @@ source:
   sha256: eb894f478f1df78dce2b285445435c884b7aab65c052e0c24d7e52bdc3f0ca94
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [py<39]
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pip
     - python
+    - setuptools
   run:
     - matplotlib-base >=3.3.4
     - numpy >=1.23.5
