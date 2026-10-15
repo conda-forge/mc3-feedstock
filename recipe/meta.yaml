@@ -1,5 +1,5 @@
 {% set name = "mc3" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
-  sha256: eb894f478f1df78dce2b285445435c884b7aab65c052e0c24d7e52bdc3f0ca94
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
+  sha256: 2684354603239a8ca84808909185a2ed45a6a40d8893759adb1b177153448b0e
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [py<39]
   entry_points:
@@ -23,13 +23,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - numpy
+    - numpy >=2.0.0
     - pip
     - python
     - setuptools
   run:
-    - matplotlib-base >=3.3.4
-    - numpy >=1.23.5
+    - matplotlib-base >=3.8.0
+    - numpy >=2.0.0
     - python
     - scipy >=1.5.4
 
