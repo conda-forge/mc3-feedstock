@@ -23,13 +23,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - numpy
+    - numpy >=2.0.0
     - pip
     - python
     - setuptools
   run:
-    - matplotlib-base >=3.3.4
-    - numpy >=1.23.5
+    - matplotlib-base >=3.8.0
+    - numpy >=2.0.0
     - python
     - scipy >=1.5.4
 
