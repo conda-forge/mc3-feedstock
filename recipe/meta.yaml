@@ -1,5 +1,5 @@
 {% set name = "mc3" %}
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mc3-{{ version }}.tar.gz
-  sha256: 2684354603239a8ca84808909185a2ed45a6a40d8893759adb1b177153448b0e
+  sha256: c51cc1a634b5700d93bf6bc2f0d357c43e966ef0226995f630dd044ee4d37b46
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [py<39]
   entry_points:
